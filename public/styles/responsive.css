@@ -1,0 +1,56 @@
+@media screen and (min-width: 600px) {
+  header {
+    background-image: url("../assets/desktop/image-header.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
+  }
+  .navbar {
+    padding: 0 5%;
+  }
+  .navbar .button--mobile {
+    display: none;
+  }
+  .navbar ul {
+    background-color: transparent;
+    max-width: 400px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 0 0 auto;
+    position: unset;
+    padding: 0;
+  }
+  .navbar ul .path {
+    color: var(--white);
+    margin: 0rem 1rem;
+    padding: 0;
+  }
+  .navbar ul .button--path {
+    background-color: var(--white);
+    max-width: 130px;
+    height: 40px;
+    letter-spacing: 0.04rem;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul::before {
+    all: unset;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
