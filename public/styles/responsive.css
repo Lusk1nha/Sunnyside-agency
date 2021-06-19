@@ -91,9 +91,9 @@
   main .text-container {
     max-width: 500px;
     width: 50%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: start;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -107,6 +107,7 @@
   main .text-container .text {
     max-width: 500px;
     width: 100%;
+    margin: 2rem 0;
   }
   main .text-container .button--learn {
     width: auto;
@@ -154,7 +155,7 @@
             flex-direction: row;
   }
   .demonstration-container .demo {
-    height: 440px;
+    height: 550px;
   }
   .demonstration-container .demo .text {
     max-width: 500px;
@@ -165,6 +166,21 @@
   }
   .photography-content {
     background-image: url("../assets/desktop/image-photography.jpg");
+  }
+  .testimonials-container {
+    width: 100%;
+    height: 600px;
+  }
+  .clients-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto 0;
+  }
+  .clients-content .client {
+    max-width: 400px;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

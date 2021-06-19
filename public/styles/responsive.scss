@@ -105,7 +105,7 @@
       max-width: 500px;
       width: 50%;
 
-      justify-content: space-between;
+      justify-content: center;
       text-align: start;
       align-items: flex-start;
 
@@ -119,6 +119,7 @@
       .text {
         max-width: 500px;
         width: 100%;
+        margin: 2rem 0;
       }
 
       .button--learn {
@@ -161,7 +162,7 @@
     flex-direction: row;
 
     .demo {
-      height: 440px;
+      height: 550px;
 
       .text {
         max-width: 500px;
@@ -176,5 +177,22 @@
 
   .photography-content {
     background-image: url('../assets/desktop/image-photography.jpg');
+  }
+
+  .testimonials-container {
+    width: 100%;
+    
+    height: 600px;
+
+  }
+
+  .clients-content {
+    flex-direction: row;
+    margin: auto 0;
+
+    .client {
+      max-width: 400px;
+      margin: 0;
+    }
   }
 }

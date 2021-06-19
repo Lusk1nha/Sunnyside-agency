@@ -289,6 +289,7 @@ main {
 main .text-container {
   max-width: 400px;
   width: 100%;
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +331,7 @@ main .text-container .button--learn {
   text-transform: uppercase;
   border: 0;
   position: relative;
+  cursor: pointer;
 }
 
 .about-transform {
@@ -508,5 +510,99 @@ main .text-container .button--learn {
 
 .photography-content .text {
   color: var(--very-dark-desaturated-blue);
+}
+
+.testimonials-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.testimonials-container .title {
+  color: var(--grayish-blue);
+  font-size: clamp(1rem, 5vw, 1.1rem);
+  font-family: 'Fraunces', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin: 2rem 0;
+}
+
+.clients-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients-content .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.clients-content .client .client-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  width: 50px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+}
+
+.clients-content .client .comment {
+  font-size: clamp(0.9rem, 4vw, 1.1rem);
+  color: var(--very-dark-grayish-blue);
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.clients-content .client .client-name {
+  color: var(--very-dark-desaturated-blue);
+  font-size: clamp(1rem, 5vw, 1.1rem);
+  font-family: 'Fraunces', sans-serif;
+  margin-bottom: 0.6rem;
+}
+
+.clients-content .client .client-career {
+  font-size: clamp(0.7rem, 4vw, 0.8rem);
+  color: var(--grayish-blue);
+  letter-spacing: 0.03rem;
 }
 /*# sourceMappingURL=main.css.map */

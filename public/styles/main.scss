@@ -9,7 +9,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
 }
 
 :root {
@@ -276,6 +276,7 @@ main {
   .text-container {
     max-width: 400px;
     width: 100%;
+    min-height: 300px;
 
     display: flex;
     flex-direction: column;
@@ -312,6 +313,9 @@ main {
   
       border: 0;
       position: relative;
+
+      cursor: pointer;
+
     }
     
   }
@@ -476,5 +480,83 @@ main {
     color: var(--very-dark-desaturated-blue);
   }
 
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 4rem 0;
+
+  .title {
+    color: var(--grayish-blue);
+    font-size: clamp(1rem, 5vw, 1.1rem);
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+
+    margin: 2rem 0 ;
+
+  }
+}
+
+.clients-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 4rem;
+
+    .client-image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      object-fit: contain;
+      object-position: 50% 50%;
+
+      width: 50px;
+
+      margin-bottom: 1.5rem;
+
+      border-radius: 50%;
+
+    }
+
+    .comment {
+      font-size: clamp(0.9rem, 4vw, 1.1rem);
+      color: var(--very-dark-grayish-blue);
+      line-height: 2rem;
+      text-align: center;
+      
+      margin-bottom: 2rem;
+      padding: 0 2rem;
+
+    }
+
+    .client-name {
+      color: var(--very-dark-desaturated-blue);
+      font-size: clamp(1rem, 5vw, 1.1rem);
+      font-family: 'Fraunces', sans-serif;
+
+      margin-bottom: 0.6rem;
+
+    }
+
+    .client-career {
+      font-size: clamp(0.7rem, 4vw, 0.8rem);
+      color: var(--grayish-blue);
+      letter-spacing: 0.03rem;
+    }
+
+  }
 }
 
