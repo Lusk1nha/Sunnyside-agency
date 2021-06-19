@@ -535,7 +535,7 @@ main .text-container .button--learn {
   font-family: 'Fraunces', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  margin: 2rem 0;
+  margin: 2rem 0 5rem;
 }
 
 .clients-content {
@@ -604,5 +604,37 @@ main .text-container .button--learn {
   font-size: clamp(0.7rem, 4vw, 0.8rem);
   color: var(--grayish-blue);
   letter-spacing: 0.03rem;
+}
+
+.demonstration-images {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.demonstration-images .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+}
+
+.demonstration-images .bg-image-1 {
+  background-image: url("../assets/mobile/image-gallery-milkbottles.jpg");
+}
+
+.demonstration-images .bg-image-2 {
+  background-image: url("../assets/mobile/image-gallery-orange.jpg");
+}
+
+.demonstration-images .bg-image-3 {
+  background-image: url("../assets/mobile/image-gallery-cone.jpg");
+}
+
+.demonstration-images .bg-image-4 {
+  background-image: url("../assets/mobile/image-gallery-sugar-cubes.jpg");
 }
 /*# sourceMappingURL=main.css.map */

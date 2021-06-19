@@ -184,6 +184,9 @@
     
     height: 600px;
 
+    .title {
+      margin-bottom: 0;
+    }
   }
 
   .clients-content {
@@ -194,5 +197,30 @@
       max-width: 400px;
       margin: 0;
     }
+  }
+
+  .demonstration-images {
+    display: flex;
+
+    .image {
+      height: 500px;
+    }
+
+    .bg-image-1 {
+      background-image: url('../assets/desktop/image-gallery-milkbottles.jpg');
+    }
+  
+    .bg-image-2 {
+      background-image: url('../assets/desktop/image-gallery-orange.jpg');
+    }
+  
+    .bg-image-3 {
+      background-image: url('../assets/desktop/image-gallery-cone.jpg');
+    }
+  
+    .bg-image-4 {
+      background-image: url('../assets/desktop/image-gallery-sugarcubes.jpg');
+    }
+
   }
 }

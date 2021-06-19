@@ -497,7 +497,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.15rem;
 
-    margin: 2rem 0 ;
+    margin: 2rem 0 5rem;
 
   }
 }
@@ -557,6 +557,38 @@ main {
       letter-spacing: 0.03rem;
     }
 
+  }
+}
+
+.demonstration-images {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 350px;
+  }
+
+  .bg-image-1 {
+    background-image: url('../assets/mobile/image-gallery-milkbottles.jpg');
+  }
+
+  .bg-image-2 {
+    background-image: url('../assets/mobile/image-gallery-orange.jpg');
+  }
+
+  .bg-image-3 {
+    background-image: url('../assets/mobile/image-gallery-cone.jpg');
+  }
+
+  .bg-image-4 {
+    background-image: url('../assets/mobile/image-gallery-sugar-cubes.jpg');
   }
 }
 
