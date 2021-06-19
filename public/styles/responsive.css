@@ -1,3 +1,15 @@
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
 @media screen and (min-width: 700px) {
   header::before {
     background-image: url("../assets/desktop/image-header.jpg");
@@ -75,6 +87,84 @@
        object-position: 50% 50%;
     width: 100%;
     max-width: 30px;
+  }
+  main .text-container {
+    max-width: 500px;
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+  main .text-container .title {
+    width: 100%;
+  }
+  main .text-container .text {
+    max-width: 500px;
+    width: 100%;
+  }
+  main .text-container .button--learn {
+    width: auto;
+  }
+  .about-transform {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .about-transform .bg-container {
+    background-image: url("../assets/desktop/image-transform.jpg");
+    background-size: cover;
+    background-color: transparent;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 50%;
+    height: 400px;
+  }
+  .about-audience {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-audience .bg-container {
+    background-image: url("../assets/desktop/image-stand-out.jpg");
+    background-size: cover;
+    background-color: transparent;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 50%;
+    height: 440px;
+  }
+  .demonstration-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .demonstration-container .demo {
+    height: 440px;
+  }
+  .demonstration-container .demo .text {
+    max-width: 500px;
+    padding: 0 3rem;
+  }
+  .graphic-content {
+    background-image: url("../assets/desktop/image-graphic-design.jpg");
+  }
+  .photography-content {
+    background-image: url("../assets/desktop/image-photography.jpg");
   }
 }
 /*# sourceMappingURL=responsive.css.map */
