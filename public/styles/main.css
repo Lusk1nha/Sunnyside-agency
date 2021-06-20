@@ -17,7 +17,7 @@
   --dark-blue: hsl(198, 62%, 26%);
   --dark-moderate-cyan: hsl(168, 34%, 41%);
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --very-dark-grayish-blue: #5a636c;
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
@@ -382,14 +382,25 @@ main .text-container .button--learn {
   margin: 1.5rem 0;
 }
 
+.about-transform .button--learn {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .about-transform .button--learn::before {
   content: '';
   background-color: var(--yellow);
   width: 100%;
-  height: 4px;
+  height: 5px;
   position: absolute;
   bottom: 1px;
+  border-radius: 20px;
   z-index: -1;
+}
+
+.about-transform .button--learn:hover::before {
+  height: 7px;
+  bottom: 0px;
 }
 
 .about-audience {
@@ -427,14 +438,25 @@ main .text-container .button--learn {
   margin: 1.5rem 0;
 }
 
+.about-audience .button--learn {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .about-audience .button--learn::before {
   content: '';
   background-color: var(--soft-red);
   width: 100%;
-  height: 4px;
+  height: 5px;
   position: absolute;
   bottom: 1px;
+  border-radius: 20px;
   z-index: -1;
+}
+
+.about-audience .button--learn:hover::before {
+  height: 7px;
+  bottom: 0px;
 }
 
 .demonstration-container {
@@ -673,6 +695,20 @@ footer {
   padding: 3rem 0;
 }
 
+footer .logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  max-width: 130px;
+  width: 100%;
+  -webkit-filter: invert(61%) sepia(11%) saturate(436%) hue-rotate(169deg) brightness(90%) contrast(94%);
+          filter: invert(61%) sepia(11%) saturate(436%) hue-rotate(169deg) brightness(90%) contrast(94%);
+}
+
 footer .path-container {
   max-width: 400px;
   width: 100%;
@@ -692,6 +728,13 @@ footer .path-container {
 footer .path-container .path {
   color: var(--very-dark-grayish-blue);
   font-size: clamp(1rem, 3vw, 1.1rem);
+  cursor: pointer;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
+}
+
+footer .path-container .path:hover {
+  color: white;
 }
 
 footer .social-medias-container {
@@ -706,5 +749,25 @@ footer .social-medias-container {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+footer .social-medias-container .social-media {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 24px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 0.15s;
+  transition: -webkit-filter 0.15s;
+  transition: filter 0.15s;
+  transition: filter 0.15s, -webkit-filter 0.15s;
+}
+
+footer .social-medias-container .social-media:hover {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 /*# sourceMappingURL=main.css.map */
